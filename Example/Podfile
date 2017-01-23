@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YandexMapView_Example' do
+  pod 'YandexMapView', :path => '../'
+
+  target 'YandexMapView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
