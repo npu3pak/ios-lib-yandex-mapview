@@ -17,7 +17,7 @@ YandexMapView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "YandexMapView"
+pod 'YandexMapView', :git => 'https://github.com/npu3pak/ios-yandex-map-view.git'
 ```
 
 ## Author
