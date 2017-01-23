@@ -32,9 +32,10 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'YandexMapView/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'YandexMapView' => ['YandexMapView/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'YandexMapView' => ['YandexMapView/**/*.html']
+  }
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

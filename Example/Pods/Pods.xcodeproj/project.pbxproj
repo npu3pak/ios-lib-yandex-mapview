@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B58BC329DAFAF3E1C2C1581A1B80BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		127D075123D55D70A18F88A65748F94A /* MapView.html in Resources */ = {isa = PBXBuildFile; fileRef = 54C01566E52711B362B595109AC0C6CC /* MapView.html */; };
+		137B83F64B5FF9268D6B58158E0898AE /* YandexMapView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AC7A1470B3B57E2F4474B589E18776A /* YandexMapView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2429F0482DCFFA57D0300FFE0C878A0A /* MapView.html in Sources */ = {isa = PBXBuildFile; fileRef = 54C01566E52711B362B595109AC0C6CC /* MapView.html */; };
+		282BD8E54FCB049C816A0345DED0EB6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		33FD71D716D0269EFC7DEA006CCB90ED /* Pods-YandexMapView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1D7C083DE982482828E62C70FD7A0D4 /* Pods-YandexMapView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CA13187490BA6A3491B0E9637DE4CBE /* Pods-YandexMapView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C301E58D4AFB16910CD739C76C166BF9 /* Pods-YandexMapView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758382A84C72F8F0C0B3F232ECB0E5CB /* YandexMapView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282E6505C96797A35DD82D764636292 /* YandexMapView-dummy.m */; };
+		76D89CBC87897EF8C143FB937027DDBD /* YandexMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950E0A41592127C6349B3BEA5135577 /* YandexMapView.swift */; };
+		80E82682F16F3DB53A445BD29CACBB3A /* Pods-YandexMapView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BD25A77A72E70D3CFBC0CB5C86EE70 /* Pods-YandexMapView_Example-dummy.m */; };
+		835E0FCAEA6F70178772269299F97CF9 /* Pods-YandexMapView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAE6D40E6EBD188C16825F1B85AA68 /* Pods-YandexMapView_Tests-dummy.m */; };
+		8B7D167D58CCB6C29E44535E4D00082A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A6ED038B7E95722CDC2EC17306E1F851 /* YandexMapView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6248973B2EADEE5EEC578B5F9607C58 /* YandexMapView.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		468D44DA430295A270BF7909C172C9A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6AD9D17D95986B2C0FD4097A4283336;
+			remoteInfo = YandexMapView;
+		};
+		C87701E45B93C3B213A1080E9BC377FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8B46280E0D807930C535B5320CD7BB0;
+			remoteInfo = "YandexMapView-YandexMapView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0525F9D108679EC4C55E0402523FE711 /* YandexMapView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YandexMapView.xcconfig; sourceTree = "<group>"; };
+		055A8E25D9230AC9E6026E6F50327865 /* Pods-YandexMapView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YandexMapView_Example.modulemap"; sourceTree = "<group>"; };
+		07821AEED65BDF327A4138CD012F6FBC /* ResourceBundle-YandexMapView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YandexMapView-Info.plist"; sourceTree = "<group>"; };
+		0EA68BCAFBA4D464B0405AF9F4712FF3 /* Pods-YandexMapView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YandexMapView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		106E2A8EDC4E00B63976D6D59B83CA20 /* Pods_YandexMapView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YandexMapView_Example.framework; path = "Pods-YandexMapView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1575465ACA87A346AC4A230E4F58D608 /* Pods-YandexMapView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YandexMapView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1C3FDB6FAF202ED5F9C0882D6E173931 /* Pods-YandexMapView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YandexMapView_Tests-resources.sh"; sourceTree = "<group>"; };
+		1E24E2C1A735744EA26C43621A89D1F6 /* YandexMapView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YandexMapView-prefix.pch"; sourceTree = "<group>"; };
+		2C91CE5D397467A8F8983FF1B99C38EE /* Pods-YandexMapView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YandexMapView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		38AB35B0E94E169CFAF271A99753C994 /* Pods-YandexMapView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YandexMapView_Example-resources.sh"; sourceTree = "<group>"; };
+		408F36FF0AC123691920E41D681FD5F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AFBAE4D9520A37A3C142D7C97BF2F7C /* YandexMapView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YandexMapView.modulemap; sourceTree = "<group>"; };
+		54C01566E52711B362B595109AC0C6CC /* MapView.html */ = {isa = PBXFileReference; includeInIndex = 1; path = MapView.html; sourceTree = "<group>"; };
+		588CA1E3AECF233DDA869293C0E8DE2B /* Pods_YandexMapView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YandexMapView_Tests.framework; path = "Pods-YandexMapView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61107AFCD622B496190773F093AB31D5 /* Pods-YandexMapView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YandexMapView_Tests.modulemap"; sourceTree = "<group>"; };
+		6282E6505C96797A35DD82D764636292 /* YandexMapView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YandexMapView-dummy.m"; sourceTree = "<group>"; };
+		65DDA9B2FB5B56C77E40CC2B7F8C99AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6950E0A41592127C6349B3BEA5135577 /* YandexMapView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YandexMapView.swift; sourceTree = "<group>"; };
+		8AC7A1470B3B57E2F4474B589E18776A /* YandexMapView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YandexMapView-umbrella.h"; sourceTree = "<group>"; };
+		8D342C30994305F473CF989607F73101 /* YandexMapView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YandexMapView.framework; path = YandexMapView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F9D9F352AAF43B95B6EC359E0F16451 /* Pods-YandexMapView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YandexMapView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		944FDCB61CAFA209011B76433DA30B50 /* Pods-YandexMapView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YandexMapView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A3E40CD1A288AB9F177CB7499EA0CB21 /* Pods-YandexMapView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YandexMapView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A579E5ABE77DAB023E0618ECDA027760 /* Pods-YandexMapView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YandexMapView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AD357EDF7B01DBAC2CDE6A8ACD617BFD /* Pods-YandexMapView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YandexMapView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ADDAE6D40E6EBD188C16825F1B85AA68 /* Pods-YandexMapView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YandexMapView_Tests-dummy.m"; sourceTree = "<group>"; };
+		B1D7C083DE982482828E62C70FD7A0D4 /* Pods-YandexMapView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YandexMapView_Example-umbrella.h"; sourceTree = "<group>"; };
+		B3BD25A77A72E70D3CFBC0CB5C86EE70 /* Pods-YandexMapView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YandexMapView_Example-dummy.m"; sourceTree = "<group>"; };
+		B6248973B2EADEE5EEC578B5F9607C58 /* YandexMapView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = YandexMapView.bundle; path = YandexMapView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C301E58D4AFB16910CD739C76C166BF9 /* Pods-YandexMapView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YandexMapView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C423A6510C800718724AC6F72B5B0131 /* Pods-YandexMapView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YandexMapView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C91D3D554FDA3A4055D91D744790D3A8 /* Pods-YandexMapView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YandexMapView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E02FD3B27E66C66AE13F0D876BE8E377 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86B9D0A1A636E14B1DAE4594C9E739FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE989E454740C3F5EA4030CD3E57383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B58BC329DAFAF3E1C2C1581A1B80BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C3CC4B9B65A05F0ECDEC516C57E342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7D167D58CCB6C29E44535E4D00082A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD425640B9691B1FD7395D094DE8802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282BD8E54FCB049C816A0345DED0EB6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14CB94A92FEF76881669F344BD55F443 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A156CD6CA11B49DC1FCF84DE40A95539 /* YandexMapView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		306EF648C881C788952751D437F8FECD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				106E2A8EDC4E00B63976D6D59B83CA20 /* Pods_YandexMapView_Example.framework */,
+				588CA1E3AECF233DDA869293C0E8DE2B /* Pods_YandexMapView_Tests.framework */,
+				B6248973B2EADEE5EEC578B5F9607C58 /* YandexMapView.bundle */,
+				8D342C30994305F473CF989607F73101 /* YandexMapView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		463D8576E211D12A01CE4A2B7432B938 /* Pods-YandexMapView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				65DDA9B2FB5B56C77E40CC2B7F8C99AF /* Info.plist */,
+				055A8E25D9230AC9E6026E6F50327865 /* Pods-YandexMapView_Example.modulemap */,
+				8F9D9F352AAF43B95B6EC359E0F16451 /* Pods-YandexMapView_Example-acknowledgements.markdown */,
+				944FDCB61CAFA209011B76433DA30B50 /* Pods-YandexMapView_Example-acknowledgements.plist */,
+				B3BD25A77A72E70D3CFBC0CB5C86EE70 /* Pods-YandexMapView_Example-dummy.m */,
+				A3E40CD1A288AB9F177CB7499EA0CB21 /* Pods-YandexMapView_Example-frameworks.sh */,
+				38AB35B0E94E169CFAF271A99753C994 /* Pods-YandexMapView_Example-resources.sh */,
+				B1D7C083DE982482828E62C70FD7A0D4 /* Pods-YandexMapView_Example-umbrella.h */,
+				1575465ACA87A346AC4A230E4F58D608 /* Pods-YandexMapView_Example.debug.xcconfig */,
+				C423A6510C800718724AC6F72B5B0131 /* Pods-YandexMapView_Example.release.xcconfig */,
+			);
+			name = "Pods-YandexMapView_Example";
+			path = "Target Support Files/Pods-YandexMapView_Example";
+			sourceTree = "<group>";
+		};
+		68E900691BA3DF62811E58DA7A495723 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0AAE03F86D1F815D623984C2BB247B7 /* YandexMapView */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6E5CB43BFE36C59D126B1B4416661131 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				463D8576E211D12A01CE4A2B7432B938 /* Pods-YandexMapView_Example */,
+				980313DF342010813A6D83E0E3532B61 /* Pods-YandexMapView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		74946D16C34681C0CE233DDAC948B0C3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E02FD3B27E66C66AE13F0D876BE8E377 /* Info.plist */,
+				07821AEED65BDF327A4138CD012F6FBC /* ResourceBundle-YandexMapView-Info.plist */,
+				4AFBAE4D9520A37A3C142D7C97BF2F7C /* YandexMapView.modulemap */,
+				0525F9D108679EC4C55E0402523FE711 /* YandexMapView.xcconfig */,
+				6282E6505C96797A35DD82D764636292 /* YandexMapView-dummy.m */,
+				1E24E2C1A735744EA26C43621A89D1F6 /* YandexMapView-prefix.pch */,
+				8AC7A1470B3B57E2F4474B589E18776A /* YandexMapView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YandexMapView";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				14CB94A92FEF76881669F344BD55F443 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				306EF648C881C788952751D437F8FECD /* Products */,
+				6E5CB43BFE36C59D126B1B4416661131 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		980313DF342010813A6D83E0E3532B61 /* Pods-YandexMapView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				408F36FF0AC123691920E41D681FD5F2 /* Info.plist */,
+				61107AFCD622B496190773F093AB31D5 /* Pods-YandexMapView_Tests.modulemap */,
+				A579E5ABE77DAB023E0618ECDA027760 /* Pods-YandexMapView_Tests-acknowledgements.markdown */,
+				AD357EDF7B01DBAC2CDE6A8ACD617BFD /* Pods-YandexMapView_Tests-acknowledgements.plist */,
+				ADDAE6D40E6EBD188C16825F1B85AA68 /* Pods-YandexMapView_Tests-dummy.m */,
+				C91D3D554FDA3A4055D91D744790D3A8 /* Pods-YandexMapView_Tests-frameworks.sh */,
+				1C3FDB6FAF202ED5F9C0882D6E173931 /* Pods-YandexMapView_Tests-resources.sh */,
+				C301E58D4AFB16910CD739C76C166BF9 /* Pods-YandexMapView_Tests-umbrella.h */,
+				2C91CE5D397467A8F8983FF1B99C38EE /* Pods-YandexMapView_Tests.debug.xcconfig */,
+				0EA68BCAFBA4D464B0405AF9F4712FF3 /* Pods-YandexMapView_Tests.release.xcconfig */,
+			);
+			name = "Pods-YandexMapView_Tests";
+			path = "Target Support Files/Pods-YandexMapView_Tests";
+			sourceTree = "<group>";
+		};
+		A0E2960144BB9625A42F808326AB138C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A156CD6CA11B49DC1FCF84DE40A95539 /* YandexMapView */ = {
+			isa = PBXGroup;
+			children = (
+				68E900691BA3DF62811E58DA7A495723 /* Resources */,
+				74946D16C34681C0CE233DDAC948B0C3 /* Support Files */,
+				CCFFCA2DA4E3B988AF510A6BFA304312 /* YandexMapView */,
+			);
+			name = YandexMapView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B0AAE03F86D1F815D623984C2BB247B7 /* YandexMapView */ = {
+			isa = PBXGroup;
+			children = (
+				A0E2960144BB9625A42F808326AB138C /* Classes */,
+			);
+			name = YandexMapView;
+			path = YandexMapView;
+			sourceTree = "<group>";
+		};
+		BBB7DB8EF7E21E61AD98275B60F361FF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				54C01566E52711B362B595109AC0C6CC /* MapView.html */,
+				6950E0A41592127C6349B3BEA5135577 /* YandexMapView.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCFFCA2DA4E3B988AF510A6BFA304312 /* YandexMapView */ = {
+			isa = PBXGroup;
+			children = (
+				BBB7DB8EF7E21E61AD98275B60F361FF /* Classes */,
+			);
+			name = YandexMapView;
+			path = YandexMapView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		031117EB1A265CCB4F43D190D4A838DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA13187490BA6A3491B0E9637DE4CBE /* Pods-YandexMapView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B65CE8E6A2BA973BCB2D9F4EFC8546B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FD71D716D0269EFC7DEA006CCB90ED /* Pods-YandexMapView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		969EB590EAADFE94E65D0F3E8F8EAC68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137B83F64B5FF9268D6B58158E0898AE /* YandexMapView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		647C06A10047F17646AFD66E31F7C389 /* Pods-YandexMapView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B97AF6561202DF17D477BA4E1DDB627D /* Build configuration list for PBXNativeTarget "Pods-YandexMapView_Example" */;
+			buildPhases = (
+				B278A30AAB67C24CE4A0B9738FAA4FD2 /* Sources */,
+				9FE989E454740C3F5EA4030CD3E57383 /* Frameworks */,
+				3B65CE8E6A2BA973BCB2D9F4EFC8546B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E32E58C2A7C97C78CA6988510160EFE /* PBXTargetDependency */,
+			);
+			name = "Pods-YandexMapView_Example";
+			productName = "Pods-YandexMapView_Example";
+			productReference = 106E2A8EDC4E00B63976D6D59B83CA20 /* Pods_YandexMapView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A8B46280E0D807930C535B5320CD7BB0 /* YandexMapView-YandexMapView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56B5D2AF2792E00AA9EB9C4BC7F8E9D /* Build configuration list for PBXNativeTarget "YandexMapView-YandexMapView" */;
+			buildPhases = (
+				1B03DA601D63F2FD2357EF9C03C49907 /* Sources */,
+				86B9D0A1A636E14B1DAE4594C9E739FC /* Frameworks */,
+				F657FB644F7826C5EA1A8050EA4D24B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YandexMapView-YandexMapView";
+			productName = "YandexMapView-YandexMapView";
+			productReference = B6248973B2EADEE5EEC578B5F9607C58 /* YandexMapView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B13CFA60824741BAD2394E2F02F07603 /* Pods-YandexMapView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C6A64E184954AF310E7C5FA62C7BA16 /* Build configuration list for PBXNativeTarget "Pods-YandexMapView_Tests" */;
+			buildPhases = (
+				9D9D3FD1DF1F6E259E35264BEF03A4A1 /* Sources */,
+				A2C3CC4B9B65A05F0ECDEC516C57E342 /* Frameworks */,
+				031117EB1A265CCB4F43D190D4A838DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-YandexMapView_Tests";
+			productName = "Pods-YandexMapView_Tests";
+			productReference = 588CA1E3AECF233DDA869293C0E8DE2B /* Pods_YandexMapView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6AD9D17D95986B2C0FD4097A4283336 /* YandexMapView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F62DC319C6BAF308417ED80291506FA1 /* Build configuration list for PBXNativeTarget "YandexMapView" */;
+			buildPhases = (
+				0B1E6681A0F1A3E0D1A401494FEC8A3C /* Sources */,
+				ECD425640B9691B1FD7395D094DE8802 /* Frameworks */,
+				1BE03BA44DD0F159809F28D3FB650676 /* Resources */,
+				969EB590EAADFE94E65D0F3E8F8EAC68 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7760CB45FADE309D6969F06C2398DD9 /* PBXTargetDependency */,
+			);
+			name = YandexMapView;
+			productName = YandexMapView;
+			productReference = 8D342C30994305F473CF989607F73101 /* YandexMapView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 306EF648C881C788952751D437F8FECD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				647C06A10047F17646AFD66E31F7C389 /* Pods-YandexMapView_Example */,
+				B13CFA60824741BAD2394E2F02F07603 /* Pods-YandexMapView_Tests */,
+				B6AD9D17D95986B2C0FD4097A4283336 /* YandexMapView */,
+				A8B46280E0D807930C535B5320CD7BB0 /* YandexMapView-YandexMapView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BE03BA44DD0F159809F28D3FB650676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ED038B7E95722CDC2EC17306E1F851 /* YandexMapView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F657FB644F7826C5EA1A8050EA4D24B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				127D075123D55D70A18F88A65748F94A /* MapView.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B1E6681A0F1A3E0D1A401494FEC8A3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2429F0482DCFFA57D0300FFE0C878A0A /* MapView.html in Sources */,
+				758382A84C72F8F0C0B3F232ECB0E5CB /* YandexMapView-dummy.m in Sources */,
+				76D89CBC87897EF8C143FB937027DDBD /* YandexMapView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B03DA601D63F2FD2357EF9C03C49907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D9D3FD1DF1F6E259E35264BEF03A4A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835E0FCAEA6F70178772269299F97CF9 /* Pods-YandexMapView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B278A30AAB67C24CE4A0B9738FAA4FD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E82682F16F3DB53A445BD29CACBB3A /* Pods-YandexMapView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E32E58C2A7C97C78CA6988510160EFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YandexMapView;
+			target = B6AD9D17D95986B2C0FD4097A4283336 /* YandexMapView */;
+			targetProxy = 468D44DA430295A270BF7909C172C9A8 /* PBXContainerItemProxy */;
+		};
+		A7760CB45FADE309D6969F06C2398DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YandexMapView-YandexMapView";
+			target = A8B46280E0D807930C535B5320CD7BB0 /* YandexMapView-YandexMapView */;
+			targetProxy = C87701E45B93C3B213A1080E9BC377FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		48D75EC8939155F525DD088EEE1FE0AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1575465ACA87A346AC4A230E4F58D608 /* Pods-YandexMapView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YandexMapView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YandexMapView_Example/Pods-YandexMapView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YandexMapView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56DA64B2466EF98B579E275BB7F874D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0525F9D108679EC4C55E0402523FE711 /* YandexMapView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YandexMapView/YandexMapView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YandexMapView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YandexMapView/YandexMapView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YandexMapView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C8E4CFC23B479C70D1B7B0A5687202B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA68BCAFBA4D464B0405AF9F4712FF3 /* Pods-YandexMapView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YandexMapView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YandexMapView_Tests/Pods-YandexMapView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YandexMapView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7469D42B701CF9B7ECC2BF389B79BB5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0525F9D108679EC4C55E0402523FE711 /* YandexMapView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YandexMapView/YandexMapView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YandexMapView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YandexMapView/YandexMapView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YandexMapView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AA56BF829BE4A3160161802A5B27077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0525F9D108679EC4C55E0402523FE711 /* YandexMapView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YandexMapView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/YandexMapView/ResourceBundle-YandexMapView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = YandexMapView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9F7952C7F9600756A8574DD16EBF7EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C91CE5D397467A8F8983FF1B99C38EE /* Pods-YandexMapView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YandexMapView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YandexMapView_Tests/Pods-YandexMapView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YandexMapView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B39D623F1C989A5AF2E7FCB5C0C81E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0525F9D108679EC4C55E0402523FE711 /* YandexMapView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YandexMapView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/YandexMapView/ResourceBundle-YandexMapView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = YandexMapView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C9E875AEDF6351A32BAFBE3DEE95B15C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C423A6510C800718724AC6F72B5B0131 /* Pods-YandexMapView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YandexMapView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YandexMapView_Example/Pods-YandexMapView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YandexMapView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C6A64E184954AF310E7C5FA62C7BA16 /* Build configuration list for PBXNativeTarget "Pods-YandexMapView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F7952C7F9600756A8574DD16EBF7EE8 /* Debug */,
+				6C8E4CFC23B479C70D1B7B0A5687202B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B97AF6561202DF17D477BA4E1DDB627D /* Build configuration list for PBXNativeTarget "Pods-YandexMapView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48D75EC8939155F525DD088EEE1FE0AE /* Debug */,
+				C9E875AEDF6351A32BAFBE3DEE95B15C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56B5D2AF2792E00AA9EB9C4BC7F8E9D /* Build configuration list for PBXNativeTarget "YandexMapView-YandexMapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39D623F1C989A5AF2E7FCB5C0C81E5B /* Debug */,
+				8AA56BF829BE4A3160161802A5B27077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F62DC319C6BAF308417ED80291506FA1 /* Build configuration list for PBXNativeTarget "YandexMapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DA64B2466EF98B579E275BB7F874D8 /* Debug */,
+				7469D42B701CF9B7ECC2BF389B79BB5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

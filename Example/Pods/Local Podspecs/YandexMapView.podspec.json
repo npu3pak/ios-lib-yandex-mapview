@@ -1,0 +1,27 @@
+{
+  "name": "YandexMapView",
+  "version": "0.1.0",
+  "summary": "A short description of YandexMapView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/YandexMapView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Евгений Сафронов": "evsafronov.personal@yandex.ru"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/YandexMapView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YandexMapView/Classes/**/*",
+  "resource_bundles": {
+    "YandexMapView": [
+      "YandexMapView/**/*.html"
+    ]
+  }
+}

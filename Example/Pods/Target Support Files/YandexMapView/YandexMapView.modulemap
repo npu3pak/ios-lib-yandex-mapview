@@ -1,0 +1,6 @@
+framework module YandexMapView {
+  umbrella header "YandexMapView-umbrella.h"
+
+  export *
+  module * { export * }
+}

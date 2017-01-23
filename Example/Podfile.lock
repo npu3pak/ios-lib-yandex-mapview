@@ -1,0 +1,16 @@
+PODS:
+  - YandexMapView (0.1.0)
+
+DEPENDENCIES:
+  - YandexMapView (from `../`)
+
+EXTERNAL SOURCES:
+  YandexMapView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  YandexMapView: c778474671554fe018152960f3ff76477d048296
+
+PODFILE CHECKSUM: 6db0bc511cf87e6cb57ec9775e5e9463273feb85
+
+COCOAPODS: 1.1.1

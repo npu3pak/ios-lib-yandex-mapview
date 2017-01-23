@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>iOS devices</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onError=onError" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        
+        if(typeof ymaps === 'undefined') {
+            onError()
+        } else {
+            ymaps.ready(init);
+        }
+    
+        var myMap;
+
+        function init() {
+            myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7,
+                controls: ["zoomControl"]
+            }, {
+                // restrictMapArea: [[56.3607,38.0196],[56.2711,38.2605]]
+            });
+            
+            onLoad()
+        }
+
+        function onMarkerClicked(id) {
+            open("callback://markerClicked?id="+id, "_self");
+        }
+
+        function onLoad() {
+            open("callback://mapLoaded", "_self");
+        }
+
+        function onError() {
+            open("callback://mapUnavailable", "_self");
+        }
+
+        function showMarker(id, lat, long, title, preset = 'islands#blackStretchyIcon') {
+           var myGeoObject = new ymaps.GeoObject({
+                // Описание геометрии.
+                geometry: {
+                    type: "Point",
+                    coordinates: [lat, long]
+                },
+                // Свойства.
+                properties: {
+                    // Контент метки.
+                    iconContent: title
+                }
+            }, {
+                // Опции.
+                // Иконка метки будет растягиваться под размер ее содержимого.
+                preset: preset
+            });
+
+            myGeoObject.events.add('click', function () {
+                onMarkerClicked(id)
+            });
+
+            myMap.geoObjects.add(myGeoObject);
+        }
+
+        //'yandex#map', 'yandex#satellite', 'yandex#hybrid'
+        function setType(type) {
+            myMap.setType(type);
+        }
+
+        function setCenter(lat, long, duration = 0) {
+            myMap.setCenter([lat, long], myMap.zoom, {
+                duration: duration
+            });
+        }
+
+        function setZoom(zoom) {
+            myMap.setZoom(zoom)
+        }
+
+        function setBounds(northWestLat, northWestLong, southEastLat, southEastLong) {
+            myMap.setBounds([[northWestLat, northWestLong], [southEastLat, southEastLong]]);
+        }
+
+    </script>
+
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div id="map"></div>
+</body>
+
+</html>

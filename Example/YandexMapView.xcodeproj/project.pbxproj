@@ -31,10 +31,10 @@
 		012688BF4D18CFBC468F51C7 /* Pods-YandexMapView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YandexMapView_Example/Pods-YandexMapView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		12E2F1BC27CD61ED6525919A /* Pods_YandexMapView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexMapView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		204703063626BA59120D9C35 /* Pods-YandexMapView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YandexMapView_Tests/Pods-YandexMapView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2645FBAEAAA154B35743C968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2645FBAEAAA154B35743C968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3E6AC213800B3D076DA549B0 /* Pods-YandexMapView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YandexMapView_Tests/Pods-YandexMapView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		42051A30042991B28BB80278 /* Pods-YandexMapView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YandexMapView_Example/Pods-YandexMapView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		488B63629B8CBECE3290780A /* YandexMapView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YandexMapView.podspec; path = ../YandexMapView.podspec; sourceTree = "<group>"; };
+		488B63629B8CBECE3290780A /* YandexMapView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YandexMapView.podspec; path = ../YandexMapView.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YandexMapView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMapView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D15EEFD1110A75D9A9BE69DE /* Pods_YandexMapView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexMapView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2393DD264112A5C7FC1DF6F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E2393DD264112A5C7FC1DF6F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,9 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = M8NLKHKFZX;
+						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -489,11 +492,13 @@
 			baseConfigurationReference = 42051A30042991B28BB80278 /* Pods-YandexMapView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8NLKHKFZX;
 				INFOPLIST_FILE = YandexMapView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -502,11 +507,13 @@
 			baseConfigurationReference = 012688BF4D18CFBC468F51C7 /* Pods-YandexMapView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8NLKHKFZX;
 				INFOPLIST_FILE = YandexMapView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -526,6 +533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -541,6 +549,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
