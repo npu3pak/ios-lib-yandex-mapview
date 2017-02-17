@@ -7,9 +7,9 @@ public enum MapType {
 }
 
 public class YandexMapView: UIWebView, UIWebViewDelegate {
-    var onMapLoaded: (() -> Void)?
-    var onMapError: ((String) -> Void)?
-    var onMarkerClicked: ((Int) -> Void)?
+    public var onMapLoaded: (() -> Void)?
+    public var onMapError: ((String) -> Void)?
+    public var onMarkerClicked: ((Int) -> Void)?
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
