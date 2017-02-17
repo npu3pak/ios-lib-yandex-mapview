@@ -59,10 +59,14 @@
             });
 
             myGeoObject.events.add('click', function () {
-                onMarkerClicked(id)
+                onMarkerClicked(id);
             });
 
             myMap.geoObjects.add(myGeoObject);
+        }
+
+        function clear() {
+            myMap.geoObjects.removeAll();   
         }
 
         //'yandex#map', 'yandex#satellite', 'yandex#hybrid'

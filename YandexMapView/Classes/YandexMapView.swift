@@ -27,6 +27,10 @@ public class YandexMapView: UIWebView, UIWebViewDelegate {
         loadHTMLString(html!, baseURL: nil)
     }
     
+    public func clear() {
+        stringByEvaluatingJavaScript(from: "clear()")
+    }
+    
     public func showMarker(id: Int, latitude: Double, longitude: Double, title: String) {
         stringByEvaluatingJavaScript(from: "showMarker(\(id), \(latitude), \(longitude), '\(title)')")
     }

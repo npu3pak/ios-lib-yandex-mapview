@@ -10,17 +10,18 @@ import UIKit
 import YandexMapView
 
 class ViewController: UIViewController {
+    @IBOutlet var mapView: YandexMapView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view, typically from a nib.
+        mapView.onMapLoaded = onMapLoaded
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func onMapLoaded() {
+        mapView.showMarker(id: 0, latitude: 54.632389, longitude: 39.749153, title: "Новослободка")
+        mapView.setCenter(latitude: 54.632389, longitude: 39.749153)
+        mapView.setZoom(zoom: 14)
     }
-
 }
 
