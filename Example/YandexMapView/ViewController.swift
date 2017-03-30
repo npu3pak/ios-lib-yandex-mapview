@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
     
     func onMapLoaded() {
-        mapView.showMarker(id: 0, latitude: 54.632389, longitude: 39.749153, title: "Новослободка")
+        mapView.showMarker(id: 0, latitude: 54.632389, longitude: 39.749153, baloonTitle: "Заголовок", baloonBody: "Комментарий", preset: "islands#icon")
         mapView.setCenter(latitude: 54.632389, longitude: 39.749153)
         mapView.setZoom(zoom: 14)
     }

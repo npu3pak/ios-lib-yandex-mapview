@@ -40,7 +40,7 @@
             open("callback://mapUnavailable", "_self");
         }
 
-        function showMarker(id, lat, long, title, preset = 'islands#blackStretchyIcon') {
+        function showMarker(id, lat, long, iconContent, baloonTitle, baloonBody, preset = 'islands#blackStretchyIcon') {
            var myGeoObject = new ymaps.GeoObject({
                 // Описание геометрии.
                 geometry: {
@@ -50,7 +50,9 @@
                 // Свойства.
                 properties: {
                     // Контент метки.
-                    iconContent: title
+                    iconContent: iconContent,
+                    balloonContentHeader: baloonTitle,
+                    balloonContentBody: baloonBody
                 }
             }, {
                 // Опции.

@@ -31,8 +31,8 @@ public class YandexMapView: UIWebView, UIWebViewDelegate {
         stringByEvaluatingJavaScript(from: "clear()")
     }
     
-    public func showMarker(id: Int, latitude: Double, longitude: Double, title: String, preset: String = "islands#blackStretchyIcon") {
-        stringByEvaluatingJavaScript(from: "showMarker(\(id), \(latitude), \(longitude), '\(title)', '\(preset)')")
+    public func showMarker(id: Int, latitude: Double, longitude: Double, iconContent: String = "", baloonTitle: String = "", baloonBody: String = "", preset: String = "islands#icon") {
+        stringByEvaluatingJavaScript(from: "showMarker(\(id), \(latitude), \(longitude), '\(iconContent)', '\(baloonTitle)', '\(baloonBody)', '\(preset)')")
     }
     
     public func setMapType(type: MapType) {
