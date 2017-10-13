@@ -1,19 +1,37 @@
-import UIKit
+//
+//  YandexMapView2.swift
+//  Pods-YandexMapView_Example
+//
+//  Created by Evgeniy Safronov on 13.10.17.
+//
 
-public enum MapType {
-    case satellite
-    case scheme
-    case hybrid
-}
+import Foundation
+import WebKit
 
-public class YandexMapView: UIWebView, UIWebViewDelegate {
+public class YandexMapWebKitView: UIView, WKNavigationDelegate {
     public var onMapLoaded: (() -> Void)?
     public var onMapError: ((String) -> Void)?
     public var onMarkerClicked: ((Int) -> Void)?
     
+    private var webView: WKWebView!
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        initialize()
+    }
+    
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        delegate = self
+        initialize()
+    }
+    
+    private func initialize() {
+        let config = WKWebViewConfiguration()
+        webView = WKWebView(frame: frame, configuration: config)
+        webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        webView.navigationDelegate = self
+        
+        addSubview(webView)
     }
     
     public func start() {
@@ -22,15 +40,16 @@ public class YandexMapView: UIWebView, UIWebViewDelegate {
         let bundle = Bundle(url: bundleUrl!)!
         let htmlFile = bundle.path(forResource: "MapView", ofType: "html")
         let html = try? String(contentsOfFile: htmlFile!, encoding: .utf8)
-        loadHTMLString(html!, baseURL: nil)
+        webView.loadHTMLString(html!, baseURL: nil)
     }
     
     public func clear() {
-        stringByEvaluatingJavaScript(from: "clear()")
+        webView.evaluateJavaScript("clear()", completionHandler: nil)
     }
     
     public func showMarker(id: Int, latitude: Double, longitude: Double, iconContent: String = "", baloonTitle: String = "", baloonBody: String = "", preset: String = "islands#icon") {
-        stringByEvaluatingJavaScript(from: "showMarker(\(id), \(latitude), \(longitude), '\(iconContent)', '\(baloonTitle)', '\(baloonBody)', '\(preset)')")
+        let js = "showMarker(\(id), \(latitude), \(longitude), '\(iconContent)', '\(baloonTitle)', '\(baloonBody)', '\(preset)')"
+        webView.evaluateJavaScript(js, completionHandler: nil)
     }
     
     public func setMapType(type: MapType) {
@@ -40,30 +59,34 @@ public class YandexMapView: UIWebView, UIWebViewDelegate {
         case .scheme: typeName = "'yandex#map'"
         case .hybrid: typeName = "'yandex#hybrid'"
         }
-        stringByEvaluatingJavaScript(from: "setType(\(typeName))")
+        webView.evaluateJavaScript("setType(\(typeName))", completionHandler: nil)
     }
     
     public func setCenter(latitude: Double, longitude: Double, animated: Bool = false) {
-        stringByEvaluatingJavaScript(from: "setCenter(\(latitude), \(longitude), \(animated ? 300 : 0))")
+        let js = "setCenter(\(latitude), \(longitude), \(animated ? 300 : 0))"
+        webView.evaluateJavaScript(js, completionHandler: nil)
     }
     
     public func setZoom(zoom: Int) {
-        stringByEvaluatingJavaScript(from: "setZoom(\(zoom))")
+        webView.evaluateJavaScript("setZoom(\(zoom))", completionHandler: nil)
     }
     
     public func setBounds(northWestLat: Double, northWestLong: Double, southEastLat: Double, southEastLong: Double) {
-        stringByEvaluatingJavaScript(from: "setBounds(\(northWestLat), \(northWestLong), \(southEastLat), \(southEastLong))")
+        let js = "setBounds(\(northWestLat), \(northWestLong), \(southEastLat), \(southEastLong))"
+        webView.evaluateJavaScript(js, completionHandler: nil)
     }
     
-    public func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+    public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         onMapError?("Не удалось загрузить карту")
     }
     
-    public func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        print(request)
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        
+        let request = navigationAction.request
         
         guard request.url != nil else {
-            return true
+            decisionHandler(.allow)
+            return
         }
         
         let components = NSURLComponents(url: request.url!, resolvingAgainstBaseURL: false)!
@@ -75,11 +98,13 @@ public class YandexMapView: UIWebView, UIWebViewDelegate {
         
         if host == "yandex.ru" {
             UIApplication.shared.openURL(request.url!)
-            return false
+            decisionHandler(.cancel)
+            return
         }
         
         guard scheme == "callback" else {
-            return true
+            decisionHandler(.allow)
+            return
         }
         
         switch host! {
@@ -96,6 +121,6 @@ public class YandexMapView: UIWebView, UIWebViewDelegate {
         default: break
         }
         
-        return false
+        decisionHandler(.cancel)
     }
 }

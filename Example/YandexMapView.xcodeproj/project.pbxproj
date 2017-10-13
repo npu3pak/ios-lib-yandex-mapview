@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05D39AE734495A5AA189958A /* Pods_YandexMapView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E2F1BC27CD61ED6525919A /* Pods_YandexMapView_Example.framework */; };
+		4039D8B41F9150D400E22D34 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4039D8B31F9150D400E22D34 /* MobileCoreServices.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		204703063626BA59120D9C35 /* Pods-YandexMapView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YandexMapView_Tests/Pods-YandexMapView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2645FBAEAAA154B35743C968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3E6AC213800B3D076DA549B0 /* Pods-YandexMapView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YandexMapView_Tests/Pods-YandexMapView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4039D8B31F9150D400E22D34 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		42051A30042991B28BB80278 /* Pods-YandexMapView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YandexMapView_Example/Pods-YandexMapView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		488B63629B8CBECE3290780A /* YandexMapView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YandexMapView.podspec; path = ../YandexMapView.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YandexMapView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMapView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4039D8B41F9150D400E22D34 /* MobileCoreServices.framework in Frameworks */,
 				05D39AE734495A5AA189958A /* Pods_YandexMapView_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +145,7 @@
 		C8022C9100CFD3C7D24E9903 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4039D8B31F9150D400E22D34 /* MobileCoreServices.framework */,
 				12E2F1BC27CD61ED6525919A /* Pods_YandexMapView_Example.framework */,
 				D15EEFD1110A75D9A9BE69DE /* Pods_YandexMapView_Tests.framework */,
 			);
@@ -301,13 +305,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YandexMapView_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9254365CB8C1831692AF0A6E /* [CP] Embed Pods Frameworks */ = {
@@ -316,9 +323,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YandexMapView_Example/Pods-YandexMapView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YandexMapView/YandexMapView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMapView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -331,13 +341,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YandexMapView_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BABEB220D871627D699CC567 /* [CP] Copy Pods Resources */ = {
