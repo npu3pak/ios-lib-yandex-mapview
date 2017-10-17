@@ -43,7 +43,7 @@
             open("callback://mapUnavailable", "_self");
         }
 
-        function showMarker(id, lat, long, iconContent, baloonTitle, baloonBody, preset = 'islands#blackStretchyIcon') {
+        function showMarker(id, lat, long, iconContent, baloonTitle, baloonBody, preset) {
            var myGeoObject = new ymaps.GeoObject({
                 // Описание геометрии.
                 geometry: {
@@ -71,7 +71,7 @@
         }
 
         function clear() {
-            myMap.geoObjects.removeAll();   
+            myMap.geoObjects.removeAll();
         }
 
         //'yandex#map', 'yandex#satellite', 'yandex#hybrid'
@@ -79,7 +79,7 @@
             myMap.setType(type);
         }
 
-        function setCenter(lat, long, duration = 0) {
+        function setCenter(lat, long, duration) {
             myMap.setCenter([lat, long], myMap.zoom, {
                 duration: duration
             });
